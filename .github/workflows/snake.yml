@@ -19,7 +19,8 @@ jobs:
       - name: Generate snake SVGs
         uses: Platane/snk/svg-only@v3
         with:
-          github_user_token: ${{ secrets.GH_TOKEN }}
+          github_user_name: non-s
+          github_token: ${{ secrets.GH_TOKEN }}
           outputs: |
             dist/snake.svg
             dist/snake-dark.svg?palette=github-dark
